@@ -16,8 +16,10 @@ export default function InsertUpdateDelete() {
         values: action === "delete" ? [] : Object.values(JSON.parse(fields)),
       };
 
-      JSON.parse(where); // Validate JSON format for where clause
-      if (action !== "insert") payload["where"] = where;
+      if (action !== "insert") {
+        JSON.parse(where); // Validate JSON format for where clause
+        payload["where"] = where;
+      }
     } catch (error) {
       setMessage("Invalid JSON format for fields.");
       return;
