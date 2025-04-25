@@ -13,11 +13,25 @@ This is a full-stack web application built using React (frontend) and Flask (bac
 - Database: PostgreSQL
 
 ## How to Run
-
+### Setting up for backend:
+1. Navigate to the backend
+2. Create an .env file which includes:
+    DB_HOST={YOUR_DB_HOST}
+    DB_NAME={YOUR_DB_NAME}
+    DB_USER={YOUR_DB_USER_NAME}
+    DB_PASSWORD={YOUR_DB_PASSWORD}
 ### Backend
-1. Install Python dependencies: pip install requirements.txt
-
-2. Run server : python app.py
+1. Navigate to the backend:
+   cd ./backend
+2. Create the virtual environment
+   python -m venv venv
+3. Active the virtual environment:
+   source venv/Scripts/activate (For Win)
+   source venv/bin/activate (For Linux)
+4. Install Python dependencies:
+   pip install -r requirements-win.txt (For Win)
+   pip install -r requirements-linux.txt (For Linux)
+5. Run server : python app.py
 
 ### Frontend
 1. Navigate to the React app directory.
