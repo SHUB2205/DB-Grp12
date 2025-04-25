@@ -9,7 +9,6 @@ export default function SelectQuery() {
 
     const res = await fetch(`http://localhost:5000/api/select?table=${table}`);
     const result = await res.json();
-    console.log(result);
     setData(result);
   };
 
