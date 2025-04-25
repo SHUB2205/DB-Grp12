@@ -15,11 +15,11 @@ This is a full-stack web application built using React (frontend) and Flask (bac
 ## How to Run
 ### Setting up for backend:
 1. Navigate to the backend
-2. Create an .env file which includes:
-    DB_HOST={YOUR_DB_HOST}
-    DB_NAME={YOUR_DB_NAME}
-    DB_USER={YOUR_DB_USER_NAME}
-    DB_PASSWORD={YOUR_DB_PASSWORD}
+2. Create an .env file which includes:<br>
+    DB_HOST={YOUR_DB_HOST}<br>
+    DB_NAME={YOUR_DB_NAME}<br>
+    DB_USER={YOUR_DB_USER_NAME}<br>
+    DB_PASSWORD={YOUR_DB_PASSWORD}<br>
 ### Backend
 1. Navigate to the backend:
    cd ./backend
