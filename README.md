@@ -21,23 +21,23 @@ This is a full-stack web application built using React (frontend) and Flask (bac
     DB_USER={YOUR_DB_USER_NAME}<br>
     DB_PASSWORD={YOUR_DB_PASSWORD}<br>
 ### Backend
-1. Navigate to the backend:
+1. Navigate to the backend:<br>
    cd ./backend
-2. Create the virtual environment
+2. Create the virtual environment<br>
    python -m venv venv
-3. Active the virtual environment:
-   source venv/Scripts/activate (For Win)
-   source venv/bin/activate (For Linux)
-4. Install Python dependencies:
-   pip install -r requirements-win.txt (For Win)
-   pip install -r requirements-linux.txt (For Linux)
+3. Active the virtual environment:<br>
+   source venv/Scripts/activate (For Win)<br>
+   source venv/bin/activate (For Linux)<br>
+4. Install Python dependencies:<br>
+   pip install -r requirements-win.txt (For Win)<br>
+   pip install -r requirements-linux.txt (For Linux)<br>
 5. Run server : python app.py
 
 ### Frontend
 1. Navigate to the React app directory.
-2. Install dependencies and start the server:
-npm install 
-npm start
+2. Install dependencies and start the server:<br>
+npm install<br>
+npm start<br>
 
 ## API Endpoints
 - POST `/api/insert` – Insert data into a table.
