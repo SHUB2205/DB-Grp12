@@ -15,12 +15,13 @@ export default function InsertUpdateDelete() {
         fields: action === "delete" ? [] : Object.keys(JSON.parse(fields)),
         values: action === "delete" ? [] : Object.values(JSON.parse(fields)),
       };
+
+      JSON.parse(where); // Validate JSON format for where clause
+      if (action !== "insert") payload["where"] = where;
     } catch (error) {
       setMessage("Invalid JSON format for fields.");
       return;
     }
-    if (action !== "insert") payload["where"] = where;
-
     const res = await fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
